@@ -1,6 +1,6 @@
 # Comandos vim vscode
 
-> v0.0.1
+> v0.0.2
 
 ## Indice
 
@@ -11,6 +11,7 @@
     - [Vertical](#vertical)
     - [Horizontal](#horizontal)
   - [Inserción](#inserción)
+    - [Comandos en modo inserción](#comandos-en-modo-inserción)
   - [Edición](#edición)
     - [Reemplazar](#reemplazar)
     - [Copiar](#copiar)
@@ -19,6 +20,7 @@
     - [Pegar](#pegar)
   - [Buscar y Reemplazar](#buscar-y-reemplazar)
   - [Selección](#selección)
+    - [Comandos en modo selección](#comandos-en-modo-selección)
   - [Navegar (solo vscode)](#navegar-solo-vscode)
   - [Plegado](#plegado)
 
@@ -70,11 +72,21 @@
   Dolor consequat qui aliqua█
 ```
 
-- `$`: Mover el cursor hasta el final de la linea.
+- `$`: Mover el cursor hasta el final del texto.
+
+```sh
+  ────────────────────────────────────────────────────────────
+  █Dolor consequat qui aliqua. Voluptate elit quis non laborum
+  ───────────────────────────┐
+  laboris id et deserunt ad id.
+```
+
+- `g_`: Mover el cursor al último carácter al final de la linea.
 
 ```sh
   ──────────────────────────┐
-  █Dolor consequat qui aliqua
+  █Dolor-consequat-qui aliqua. 
+  Voluptate elit quis non laborum laboris id et deserunt ad id.
 ```
 
 - `w`: Mover el cursor al principio de la siguiente palabra.
@@ -130,7 +142,6 @@
 - `t<letra>`: Mover el cursor antes de la siguiente aparición de la `<letra>` (key sensitive).
 - `F<letra>`: Mover el cursor sobre la anterior aparición de la `<letra>` (key sensitive).
 - `T<letra>`: Mover el cursor antes de la anterior aparición de la `<letra>` (key sensitive).
-- `g_`: Mover el cursor al último carácter antes de un salto de linea.
 - `^`: Mover el cursor al primer carácter después de un salto de linea.
 - `zz`: Centra la pantalla al cursor.
 
@@ -145,6 +156,11 @@
 - `I`: Modo inserción al principio de la linea.
 - `A`: Modo inserción al principio de la linea.
 - `ea`: Modo inserción después de la siguiente palabra.
+
+[volver](#comandos-vim-vscode)
+
+### Comandos en modo inserción
+
 - `Ctrl + h`: Borrar carácter antes del cursor (en modo inserción).
 - `Ctrl + w`: Borrar palabra después del cursor (en modo inserción).
 - `Ctrl + t`: Identar linea (en modo inserción).
@@ -215,8 +231,8 @@
 
 ## Buscar y Reemplazar
 
-- `/<patrón>`: Busca patrón en todo el archivo para el final.
 - `?<patrón>`: Busca patrón en todo el archivo para el inicio.
+- `/<patrón>`: Busca patrón en todo el archivo para el final.
 - `n`: Siguiente aparición del patrón.
 - `N`: Anterior aparición del patrón.
 - `:s/<patrón>/<nuevoPatrón>`: Busca y reemplaza la primera aparición del patrón en una linea.
@@ -231,10 +247,13 @@
 - `v`: Modo seleccionar.
 - `V`: Modo seleccionar linea.
 - `o`: Mover cursor de selección al principio y al final.
-- `ab` o `a{`: Selecciona el siguiente par de ().
-- `aB` o `a(`: Selecciona el siguiente par de {}.
-- `ib` o `i{`: Selecciona el contenido del siguiente par de ().
-- `iB` o `i(`: Selecciona el contenido del siguiente par de {}.
+
+### Comandos en modo selección
+
+- `ab` o `a(`: Selecciona el siguiente par de ().
+- `aB` o `a{`: Selecciona el siguiente par de {}.
+- `ib` o `i(`: Selecciona el contenido del siguiente par de ().
+- `iB` o `i{`: Selecciona el contenido del siguiente par de {}.
 
 [volver](#comandos-vim-vscode)
 
