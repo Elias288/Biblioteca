@@ -303,16 +303,20 @@
 
 ### Manejo de ventanas
 
-| Comando          | Descripción                                                 |
-| ---------------- | ----------------------------------------------------------- |
-| `Ctrl + w(hjkl)` | Mover el cursor por las ventanas.                           |
-| `Ctrl + w(HJKL)` | Cambia la posición de la ventana en la dirección ingresada. |
-| `Ctrl + ws`      | Dividir la ventana actual horizontalmente.                  |
-| `Ctrl + wv`      | Dividir la ventana actual verticalmente.                    |
-| `Ctrl + ww`      | Cambiar de ventana.                                         |
-| `Ctrl + wq`      | Cerrar ventana.                                             |
-| `Ctrl + wx`      | Intercambiar la ventana actual con la siguiente.            |
-| `Ctrl + w=`      | Iguala tamaños de ventanas en altura y anchura.             |
+| Comando           | Descripción                                                       |
+| ----------------- | ----------------------------------------------------------------- |
+| `Ctrl + w(hjkl)`  | Mover el cursor por las ventanas.                                 |
+| `Ctrl + w(HJKL)`  | Cambia la posición de la ventana en la dirección ingresada.       |
+| `Ctrl + ws`       | Dividir la ventana actual horizontalmente.                        |
+| `Ctrl + wv`       | Dividir la ventana actual verticalmente.                          |
+| `Ctrl + ww`       | Cambiar de ventana.                                               |
+| `Ctrl + wq`       | Cerrar ventana.                                                   |
+| `Ctrl + wx`       | Intercambiar la ventana actual con la siguiente.                  |
+| `Ctrl + w=`       | Iguala tamaños de ventanas en altura y anchura.                   |
+| `Ctrl + w[<num>]>`| Aumenta el tamaño de la ventana <num> veces hacia la derecha.     |
+| `Ctrl + w[<num>]<`| Aumenta el tamaño de la ventana <num> veces hacia la izquierda.   |
+| `Ctrl + w[<num>]+`| Aumenta el tamaño de la ventana <num> veces hacia arriba.         |
+| `Ctrl + w[<num>]-`| Aumenta el tamaño de la ventana <num> veces hacia abajo.          |
 
 ### Pestañas
 
