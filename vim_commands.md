@@ -1,6 +1,6 @@
 # Comandos vim vscode
 
-> v0.0.2
+> v0.0.3
 
 ## Indice
 
@@ -19,10 +19,22 @@
     - [Cortar y reemplazar](#cortar-y-reemplazar)
     - [Pegar](#pegar)
   - [Buscar y Reemplazar](#buscar-y-reemplazar)
+  - [Buffer](#buffer)
+    - [Navegación del buffer](#navegación-del-buffer)
+    - [Manejo de ventanas](#manejo-de-ventanas)
+    - [Pestañas](#pestañas)
   - [Selección](#selección)
     - [Comandos en modo selección](#comandos-en-modo-selección)
   - [Navegar (solo vscode)](#navegar-solo-vscode)
   - [Plegado](#plegado)
+
+## Vim
+
+- `:ter[minal]`: Abre una terminal.
+- `:set nu[mber]`: Muestra en el editor el numero de cada linea.
+- `:set nu!` o `:set nonumber`: Oculta en el editor el numero de cada linea.
+- `:set rnu` o `:set relativenumber`: Muestra en el editor el numero relativo de cada linea.
+- `:set nornu` o `:set norelativenumber`: Oculta en el editor el numero relativo de cada linea.
 
 ## Archivo
 
@@ -32,7 +44,7 @@
 - `:wq`: Guardar y cerrar archivo siempre.
 - `:wqa`: Guardar y cerrar todas las pestañas.
 - `:x`: Guarda solo si hubo cambios y cierra.
-- `e!`: Recarga el archivo descartando todos los cambios.
+- `:e!`: Recarga el archivo descartando todos los cambios.
 
 [volver](#comandos-vim-vscode)
 
@@ -239,6 +251,40 @@
 - `:s/<patrón>/<nuevoPatrón>/gc`: Busca y reemplaza todas las apariciones del patrón (preguntando por cada una) en una linea.
 - `:%s/<patrón>/<nuevoPatrón>`: Busca y reemplaza todas las apariciones del patrón en el archivo.
 - `:%s/<patrón>/<nuevoPatrón>/c`: Busca y reemplaza todas las apariciones del patrón (preguntando por cada una) en el archivo.
+
+[volver](#comandos-vim-vscode)
+
+## Buffer
+
+- `:e[dit] <file>`: Abre o crea un nuevo archivo en el buffer.
+- `:bd[elete]`: Cierra el archivo del buffer.
+- `:ls` o `:buffers`: Lista todos los archivos en el buffer.
+- `:sp[lit] <file>`: Abre un archivo en el buffer y divide al ventana horizontalmente.
+- `:vs[plit] <file>`: Abre un archivo en el buffer y divide al ventana verticalmente.
+- `:vert[ical] ba[ll]`: Muestra los archivos en buffer dividiendo la ventana.
+
+### Navegación del buffer
+
+- `:bn[ext]`: Navega al siguiente archivo en el buffer.
+- `:bp[revious]`: Navega al siguiente archivo en el buffer. 
+- `:b[uffer]#`: Navega al archivo con #.
+- `:b[uffer] <file>`: Navega al archivo por nombre.
+
+### Manejo de ventanas
+
+- `Ctrl + w(hjkl)`: Mover el cursor por las ventanas.
+- `Ctrl + w(HJKL)`: Cambia la posición de la ventana en la dirección ingresada.
+- `Ctrl + ws`: Dividir la ventana actual horizontalmente.
+- `Ctrl + wv`: Dividir la ventana actual verticalmente.
+- `Ctrl + ww`: Cambiar de ventana.
+- `Ctrl + wq`: Cerrar ventana.
+- `Ctrl + wx`: Intercambiar la ventana actual con la siguiente.
+- `Ctrl + w=`: Iguala tamaños de ventanas en altura y anchura.
+
+### Pestañas
+
+- `:tab ba[ll]`: Muestra los archivos en buffer como pestañas.
+
 
 [volver](#comandos-vim-vscode)
 
