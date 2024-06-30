@@ -316,9 +316,17 @@
 
 ### Pestañas
 
-| Comando       | Descripción                                   |
-| ------------- | --------------------------------------------- |
-| `:tab ba[ll]` | Muestra los archivos en buffer como pestañas. |
+| Comando                   | Descripción                                       |
+| ------------------------- | ------------------------------------------------- |
+| `:tabnew <file>`          | Abre o crea un nuevo archivo en una nuea pestaña. |
+| `:tab ba[ll]`             | Muestra los archivos en buffer como pestañas.     |
+| `gt` o `:tabn[ext]`       | Navegar a la pestaña siguiente.                   |
+| `gT` o `:tabp[revious]`   | Navegar a la pestaña anterior.                    |
+| `#gt`                     | Navega a la pestaña #                             |
+| `Ctrl + wT`               | Mover la ventana actual a su propia ventana.      |
+| `:tabc[lose]`             | Cerrar todas las pestañas                         |
+| `:tabo[nly]`              | Cerrar todas las pestañas salvo la actual         |
+| `:tabdo <comando>`        | Ejecuta el comando en todas las pestañas          |
 
 [volver](#comandos-vim-vscode)
 
