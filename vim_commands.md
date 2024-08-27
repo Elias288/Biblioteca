@@ -297,7 +297,7 @@
 | Comando            | Descripción                               |
 | ------------------ | ----------------------------------------- |
 | `:bn[ext]`         | Navega al siguiente archivo en el buffer. |
-| `:bp[revious]`     | Navega al siguiente archivo en el buffer. |
+| `:bp[revious]`     | Navega al anterior archivo en el buffer.  |
 | `:b[uffer]#`       | Navega al archivo con #.                  |
 | `:b[uffer] <file>` | Navega al archivo por nombre.             |
 
