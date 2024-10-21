@@ -23,4 +23,5 @@ Repositorio donde se contendrán guías en español sobre diversos temas
 - [Vim Wiki](./vim/plugins/vimWiki.md)
 - [NERDTree](./vim/plugins/NERDTree.md)
 - [AutoComplPop](./vim/plugins/AutoComplPop.md)
+- [NERDCommenter](./vim/plugins/NERDCommenter.md)
 
